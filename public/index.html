@@ -28,6 +28,33 @@
     <title>Randall Roofing</title>
   </head>
   <body class="bg-dark">
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v7.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div
+      class="fb-customerchat"
+      attribution="install_email"
+      page_id="108938180848884"
+    ></div>
     <div class="d-flex align-items-center justify-content-center vh-100">
       <svg height="50" viewBox="0 0 453 98" xmlns="http://www.w3.org/2000/svg">
         <g fill="none">

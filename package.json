@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "",
-    "build": "",
+    "build": "echo 'build'",
     "start": ""
   }
 }
